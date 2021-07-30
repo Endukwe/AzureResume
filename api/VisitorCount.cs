@@ -19,10 +19,10 @@ namespace Resume.Function
        [FunctionName("VisitorCount")]
         public static HttpResponseMessage Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
-            [CosmosDB(databaseName:"resumepage", collectionName: "Counter",
-                ConnectionStringSetting = "CloudResume", Id = "id", PartitionKey = "id")] Counter counter,
-                [CosmosDB(databaseName:"resumepage", collectionName: "Counter",
-                ConnectionStringSetting = "CloudResume", Id = "id", PartitionKey = "id")] out Counter updatedCounter,
+            [CosmosDB(databaseName:"resumepage", collectionName: "visitorCount",
+                ConnectionStringSetting = "CloudResume", Id = "visitorCount", PartitionKey = "id")] Counter counter,
+                [CosmosDB(databaseName:"resumepage", collectionName: "visitorCount",
+                ConnectionStringSetting = "CloudResume", Id = "visitorCount", PartitionKey = "id")] out Counter updatedCounter,
             ILogger log)
         {
 
