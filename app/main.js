@@ -2,8 +2,7 @@
 
 
 const localApi = 'http://localhost:7071/api/VisitorCount';
-const functionApi = 'https://resumepage.azurewebsites.net/api/VisitorCount?code=I5VuMTUExKek0wEa7gJ5IS9eBybqYnxDpiPHJhnTWPaU3TbLiQPUdQ=='; 
-
+const functionApi = 'https://nresumepage.azurewebsites.net/api/visitorcountfn?'
 
     fetch(functionApi)
     .then(response => {
