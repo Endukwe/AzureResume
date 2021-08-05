@@ -15,10 +15,10 @@ namespace Company.Function
 {
     public static class GetResumeCounter
     {
-        [FunctionName("GetResumeCounter")]
+        [FunctionName("visitorcountfn")]
         public static HttpResponseMessage Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
-            [CosmosDB(databaseName:"resumepage", collectionName: "visitorcountr",
+            [CosmosDB(databaseName:"resumepage", collectionName: "visitorcount",
                 ConnectionStringSetting = "Cosmosdbconnection", Id = 1, PartitionKey = Id)] Count count,
                 [CosmosDB(databaseName:"resumepage", collectionName: "visitorcount",
                 ConnectionStringSetting = "Cosmosdbconnection", Id = 1, PartitionKey = Id)] out Count UpdatedCount,
