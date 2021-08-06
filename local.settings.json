@@ -9,7 +9,7 @@
     "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=storageaccountazureb795;AccountKey=sq493RGvpfqXcJc6EJ6om1J1Ez5W4b9B8KKVbovmhfdXip2F5qeorKa9Wb51wc8KOANBS3LyxfXzgG/BLze9Xw==;EndpointSuffix=core.windows.net",
     "WEBSITE_CONTENTSHARE": "nresumepage8522",
     "nresumepagecosmosdb_DOCUMENTDB": "AccountEndpoint=https://nresumepagecosmosdb.documents.azure.com:443/;AccountKey=ysBYpQtvPrVY0H5SXGcMYIEMwbmmaqj5IfQA7jeX2H7ly35YE7BOXF31fAf5af43ylN2jWQzSKITzzfqxmyt3g==;",
-    "WEBSITE_RUN_FROM_PACKAGE": "1",
+    "WEBSITE_RUN_FROM_PACKAGE": "0",
     "Cosmosdbconnection": "AccountEndpoint=https://nresumepagecosmosdb.documents.azure.com:443/;AccountKey=ysBYpQtvPrVY0H5SXGcMYIEMwbmmaqj5IfQA7jeX2H7ly35YE7BOXF31fAf5af43ylN2jWQzSKITzzfqxmyt3g=="
   }
 }
