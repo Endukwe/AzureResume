@@ -10,8 +10,8 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: 'Backend' # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: '3.1'  # set this to the dotnet version to use
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: 'app/Backend' # set this to the path to your web app project, defaults to the repository root
+  DOTNET_VERSION: '461'  # set this to the dotnet version to use
 
 jobs:
   build-and-deploy:
