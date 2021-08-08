@@ -13,6 +13,6 @@ const functionApi = 'https://nresumepage.azurewebsites.net/api/visitorcountfn?'
         Count = response.count;
         document.getElementById('Counter').innerText = 'You are vistor number' + Count ;
     }).catch(function(error) {
-        console.log("D for damage");
+        console.log(error);
       });
    
