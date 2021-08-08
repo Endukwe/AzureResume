@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace HP.Documents.resumepage.app.Backend
 {
     public class Count

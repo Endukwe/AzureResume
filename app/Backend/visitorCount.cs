@@ -10,6 +10,8 @@ using Newtonsoft.Json;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using HP.Documents.resumepage.app.Backend;
+using Microsoft.AspNetCore.Routing;
 
 namespace Company.Function
 {
@@ -17,18 +19,18 @@ namespace Company.Function
     {
         [FunctionName("visitorcountfn")]
         public static HttpResponseMessage Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             [CosmosDB(databaseName:"resumepage", collectionName: "visitorcount",
-                ConnectionStringSetting = "Cosmosdbconnection", Id = 1, PartitionKey = Id)] Count count,
+                ConnectionStringSetting = "Cosmosdbconnection", Id ="1", PartitionKey ="Id")] Count count,
                 [CosmosDB(databaseName:"resumepage", collectionName: "visitorcount",
-                ConnectionStringSetting = "Cosmosdbconnection", Id = 1, PartitionKey = Id)] out Count UpdatedCount,
+                ConnectionStringSetting = "Cosmosdbconnection", Id = "1", PartitionKey = "Id")] out Count UpdatedCount,
             ILogger log)
         {
 
             log.LogInformation("GetResumeCounter was triggered.");
 
             UpdatedCount = count;
-            UpdatedCounter.Count += 1;
+            UpdatedCount.count += 1;
 
             var jsonToReturn = JsonConvert.SerializeObject(count);
 
