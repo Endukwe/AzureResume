@@ -21,9 +21,9 @@ namespace Company.Function
         public static HttpResponseMessage Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             [CosmosDB(databaseName:"resumepage", collectionName: "visitorcount",
-                ConnectionStringSetting = "Cosmosdbconnection", Id ="1", PartitionKey ="Id")] Count count,
+                ConnectionStringSetting = "nresumepagecosmosdb_DOCUMENTDB", Id ="1", PartitionKey ="Id")] Count count,
                 [CosmosDB(databaseName:"resumepage", collectionName: "visitorcount",
-                ConnectionStringSetting = "Cosmosdbconnection", Id = "1", PartitionKey = "Id")] out Count UpdatedCount,
+                ConnectionStringSetting = "nresumepagecosmosdb_DOCUMENTDB", Id = "1", PartitionKey = "Id")] out Count UpdatedCount,
             ILogger log)
         {
 
