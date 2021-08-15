@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\Nresumepage.csproj": {}
+    "c:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\Nresumepage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\Nresumepage.csproj": {
+    "c:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\Nresumepage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\Nresumepage.csproj",
+        "projectUniqueName": "c:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\Nresumepage.csproj",
         "projectName": "Nresumepage",
-        "projectPath": "C:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\Nresumepage.csproj",
+        "projectPath": "c:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\Nresumepage.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\obj\\",
+        "outputPath": "c:\\Users\\HP\\Documents\\resumepage\\app\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

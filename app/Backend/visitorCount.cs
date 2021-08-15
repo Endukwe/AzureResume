@@ -10,8 +10,8 @@ using Newtonsoft.Json;
 using System.Net;
 using System.Net.Http;
 using System.Text;
-using HP.Documents.resumepage.app.Backend;
 using Microsoft.AspNetCore.Routing;
+using Company.Function;
 
 namespace Company.Function
 {
