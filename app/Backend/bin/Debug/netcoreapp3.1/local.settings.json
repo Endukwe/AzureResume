@@ -1,6 +1,7 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "nresumepagecosmosdb_DOCUMENTDB": "AccountEndpoint=https://nresumepagecosmosdb.documents.azure.com:443/;AccountKey=ysBYpQtvPrVY0H5SXGcMYIEMwbmmaqj5IfQA7jeX2H7ly35YE7BOXF31fAf5af43ylN2jWQzSKITzzfqxmyt3g==;"
   }
 }
