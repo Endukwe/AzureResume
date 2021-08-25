@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
-
+});
 
 const localApi = 'http://localhost:7071/api/countfn';
 const functionApi = 'https://nresumepage.azurewebsites.net/api/countfn'
