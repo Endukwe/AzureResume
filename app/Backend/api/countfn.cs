@@ -19,18 +19,20 @@ namespace Company.Function
         public static HttpResponseMessage Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             [CosmosDB(databaseName:"resumepage", collectionName: "visitorcount",
-                ConnectionStringSetting = "nresumepagecosmosdb_DOCUMENTDB", Id ="1", PartitionKey ="Id")] Count count,
+                ConnectionStringSetting = "nresumepagecosmosdb_DOCUMENTDB", Id ="1", PartitionKey ="1")] Count counter,
                 [CosmosDB(databaseName:"resumepage", collectionName: "visitorcount",
-                ConnectionStringSetting = "nresumepagecosmosdb_DOCUMENTDB", Id = "1", PartitionKey = "Id")] out Count UpdatedCount,
+                ConnectionStringSetting = "nresumepagecosmosdb_DOCUMENTDB", Id = "1", PartitionKey = "1")] out Count UpdatedCounter,
             ILogger log)
         {
 
-            log.LogInformation("GetResumeCounter was triggered.");
+            log.LogInformation("Countfn was triggered.");
 
-            UpdatedCount = count;
-            UpdatedCount.count += 1;
+            UpdatedCounter=counter;
+            
+            UpdatedCounter.count += 1;
+            
 
-            var jsonToReturn = JsonConvert.SerializeObject(count);
+            var jsonToReturn = JsonConvert.SerializeObject(counter);
 
             return new HttpResponseMessage(HttpStatusCode.OK)
             {
