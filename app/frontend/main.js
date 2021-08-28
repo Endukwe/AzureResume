@@ -13,7 +13,7 @@ const functionApi = 'https://nresumepage.azurewebsites.net/api/countfn'
         })
         .then(response => {
             console.log("Website called function API.");
-            count = response.visitorcount;
+            visitorcount = response.visitorcount;
             document.getElementById('counter').innerText = visitorcount;
         }).catch(function(error) {
             console.log(error);
