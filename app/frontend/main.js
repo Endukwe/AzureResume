@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 const localApi = 'http://localhost:7071/api/countfn';
-const functionApi = 'https://nresumepage.azurewebsites.net/api/countfn'
+const functionApi = 'https://nresumepage.azurewebsites.net/api/countfn?'
 
     const getVisitCount = () => {
         let visitorcount = 1;
